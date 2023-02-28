@@ -1,4 +1,7 @@
 let ti = document.querySelector("#ti");
+function twoDigits(digits){
+  return digits.toString().padEnd(2,'0');
+}
 setInterval(() => {
   let d = new Date();
   let hours = d.getHours();
@@ -15,6 +18,6 @@ setInterval(() => {
   if (hours==24) {
     hours=00
   }
-  time = hours + ":" + minutes + ":" + seconds
+  time = `${twoDigits(hours)}:${twoDigits(minutes)}:${twoDigits(seconds)}`;
   ti.innerHTML = time;
 }, 10);
