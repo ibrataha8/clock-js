@@ -1,6 +1,6 @@
 let ti = document.querySelector("#ti");
 function twoDigits(digits){
-  return digits.toString().padEnd(2,'0');
+  return digits.toString().padStart(2,'0');
 }
 setInterval(() => {
   let d = new Date();
