@@ -22,4 +22,8 @@ body{
     margin-bottom: 10px;
     color: rgb(255, 255, 255);
 }
-
+#full{
+    font-size:xx-large;
+    font-weight: 800;
+    color: rgb(0, 255, 128);
+}
