@@ -20,4 +20,15 @@ setInterval(() => {
   }
   time = `${twoDigits(hours)}:${twoDigits(minutes)}:${twoDigits(seconds)}`;
   ti.innerHTML = time;
+date() 
+
 }, 10);
+let full = document.querySelector("#full");
+function date() {
+  let dd = new Date();
+  let jour = dd.getDate();
+  let Month = dd.getMonth()+1;
+  let year = dd.getFullYear();
+  full.innerHTML=(Month+"/"+jour+"/"+year )
+
+}
